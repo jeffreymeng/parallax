@@ -37,11 +37,18 @@
 
 		.header-content {
 			padding: 50px;
-			display: table-cell;
-			vertical-align: bottom;
-			border: 1px solid #f00;
-		}
 
+		}
+/* creates a new stacking context on the header */
+#header {
+  position: relative;
+}
+
+/* positions header-content at the bottom of header's context */
+#header-content {
+  position: absolute;
+  bottom: 0;
+}
 		/*
 		.header {
 			position: relative;
