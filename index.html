@@ -50,6 +50,9 @@
 			bottom: 0;
 			left: 0;
 		}
+		.anchor {
+			padding-top:150px;
+		}
 	</style>
 
 </head>
@@ -184,7 +187,7 @@
 
     var anchor = document.createElement('a');
     anchor.className = className;
-    anchor.innerHTML = '<span></span>';
+    
 
     [].forEach.call($('h1:not(.no-permalink)'), function (el) {
       if (!el.id) {
@@ -198,7 +201,7 @@
       }
 
       var clone = anchor.cloneNode(true);
-      clone.href = '#' + el.id;
+      clone.name = '#' + el.id;
       el.insertBefore(clone, el.firstChild);
       count = count + 1;
     });
