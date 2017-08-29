@@ -35,8 +35,8 @@
 
 		.header-content {
 			padding: 50px;
-			color:#FFF;
-  font-family: 'Roboto', sans-serif;
+			color: #FFF;
+			font-family: 'Roboto', sans-serif;
 
 
 		}
@@ -58,10 +58,18 @@
 		.anchor {
 			padding-top: 150px;
 		}
-		.darken5 {
-			background-color:#000;
-    		opacity:0.5;
-		}
+
+
+		darken5:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-image: linear-gradient(to bottom right, #000, #000);
+				opacity: 0.5;
+			}
 	</style>
 
 </head>
@@ -131,17 +139,17 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
 		</div>
 	</section>
-		<!-- Image Section - set the background image for the header in the line below -->
+	<!-- Image Section - set the background image for the header in the line below -->
 	<section class="py-5 bg-image-full parallax" style="background-image: url('https://unsplash.it/5184/3456?image=1043');">
 		<div class="header-content">
 			<p class="header-text lead"><i>A caption works well here!(<a href="https://unsplash.it/5184/3456?image=1043">View Image</a>)</i></p>
 		</div>
 
 	</section>
-		<!-- Image Section - set the background image for the header in the line below -->
-		<section class="py-5">
+	<!-- Image Section - set the background image for the header in the line below -->
+	<section class="py-5">
 		<div class="container">
-			</div>
+		</div>
 	</section>
 	<section class="py-5 bg-image-full parallax" style="background-image: url('https://unsplash.it/4608/3072?image=1036');">
 		<div class="header-content">
